@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:390px;
+            width:620px;
+            padding-top: 26px;
+        
+            margin: auto;
+            background-color:rgb(163,214,234);
+        }
+
+        .main{
+            width: 450px;
+           height: 300px;
+    
+           margin: 28px auto;
+          /* padding-top: 20px; */
+          /* width: 582px;
+          height: 376px; */
+    background-color: white;
+}
+
+        
+        .box{
+            width: 336px;
+            height: 300px;
+            
+            float: left;
+            background-color: white;
+        }
+
+        
+       
+
+        .box2{
+            width: 35px;
+            height:300px;
+           background-color: blue;
+           float: right;
+          
+        }
+
+         form{
+            padding-left: 15px;
+            padding-top: 10px;
+            display: inline-block;
+            letter-spacing: 2px;
+            font-size: 10px;
+        }
+
+        form input{
+          margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: lightgrey;
+            border-radius: 2px;
+            border: none;
+            width:300px;
+            height: 20px;;
+
+
+        }
+
+        h2{
+            color: blue;
+            margin-left: 13px;;
+        }
+
+        input[type=submit]
+        {
+            color: white;
+            background-color: rgb(87, 87, 233);
+            
+            width:300px;
+        }
+
+        input[type=checkbox]
+        {
+            width:29px;
+            height:12px;
+            color:lightgrey;
+        }
+
+        a{
+            float:right;
+            margin-top: 12px;
+
+        }
+        ::placeholder{
+            color: white;
+            padding-left: 10px;
+        }
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+
+            <div class="box">
+                
+              <h2>ACCOUNT LOGIN</h2>
+                <form>
+                    <label for="USER NAME">USER NAME</label><br>
+                    <input type="email" required placeholder="user name"><br>
+                    <label for="PASSWORD" >PASSWORD</label><br>
+                    <input type="text" required placeholder="password"><br>
+                    <input type="checkbox">
+                    <label for="remainder">Remember Me</label>
+                    <a href="#">forget password</a><br>
+                    <input type="submit" value="LOG-IN" name="log in">
+            
+                </form>
+            </div>
+            <div class="box2"></div>
+            
+               
+            
+        
+        </div>
+        <br class="clear-all"/>
+           
+
+    </div>
+    
+</body>
+</html>
