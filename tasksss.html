@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neoneon</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+           
+
+        }
+        body{
+               background-image: url(images/img01.gif);
+               background-repeat: repeat-y;
+              background-position: center;
+              background-color: #3399FF;
+              font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
+             }
+        .container{
+              height: 1200px;
+              width: 850px;
+              margin: 0 auto;
+             /* border:2px solid;*/
+        }
+        .header{
+            height: 170px;
+            width: 775px;
+            margin: 0 auto;
+        }
+        .logo{
+            width: 260px;
+            height: 167px;
+            float: left;
+            background-image: url(images/img02.gif);
+            background-repeat: no-repeat;
+            margin-top: 33px;
+            margin-left: 18px;
+            }
+            .logo h1{
+                font-size: 41px;
+                color:#3399FF; 
+                padding-top: 37px;
+                padding-left: 36px;
+                
+            }
+            .logo h2{
+                font-size:25px;
+                color:#3399FF;
+                padding: 9px;
+                font-weight: 400;
+            }
+            .menu-bar{
+                float: right;
+                width: 440px;
+                height: 90px;
+                background-image:url(images/img05.gif);
+                background-repeat: no-repeat;
+                margin-right:40px;
+                margin-top: 87px;           
+             }
+            .menu-bar ul li{
+                display: inline-block;
+                list-style: none;
+                
+                
+            }
+            .menu-bar ul{
+                width: 495px;
+                height: 50px;
+                margin-top: 14px;
+                margin-left: 16px;
+            }
+            
+            .menu-bar ul li a:hover{
+                 background-color: salmon;
+                 cursor:pointer;
+                 
+            }
+            .menu-bar ul li a{
+                text-decoration: none;
+                color: aliceblue;
+                font-size: 20px;
+                padding-bottom: 12px;
+                padding-right: 11px;
+                padding-top: 10px;
+                padding-left: 10px;
+               
+               
+            }
+            .clear-all{
+                clear: both;
+            }
+            .content{
+                width: 480px;
+                float: right;
+                padding: 20px;
+            }
+            #para1{
+                width: 510px;
+                float: right;
+                box-sizing: border-box;
+                position: absolute;
+
+            }
+            #para1 h2{
+                font-size: 31px;
+                color:coral;
+                margin-top: 10px;
+                font-weight: 200;
+                margin-left: 12px;
+            }
+            .box{
+                background-image: url(images/img06.gif);
+                background-repeat: no-repeat;
+                }
+             .box {
+                font-size: 12px;
+               padding-left: 16px;
+                margin-top: 5px;
+                 box-sizing: border-box;
+                color: grey;
+                height: 48px;
+                 padding-top: 12px;
+                 
+             } 
+             .box a{
+                font-size: 12px;
+                 padding-left: 6px;
+                 text-decoration: underline;
+                 color:black;
+             } 
+             .box a:hover{
+                 text-decoration: none;
+                  color: black;
+             }
+            #post{
+                font-size: 14px;
+                 padding-left: 4px;
+                 color:grey;
+                 line-height: 180%;
+                 padding: 10px 15px;
+                 width: 390px;
+                
+
+            }
+            #para2{
+                width: 510px;
+                float: right;
+                box-sizing: border-box;
+                margin-top: 260px;
+                
+
+            }
+            #para2 h2{
+                margin-left: 31px;
+                color:coral;
+                font-size: 25px;
+                font-weight: 200;
+
+            }
+            .box2{
+                background-image: url(images/img06.gif);
+                background-repeat: no-repeat;
+                font-size: 12px;
+               padding-left: 16px;
+                color: grey;
+                height: 48px;
+                 padding-top: 12px;
+                 margin-left: 24px;
+            }
+            .box2 a{
+                font-size: 12px;
+                 padding-left: 6px;
+                 text-decoration: underline;
+                 color:black;
+             } 
+             .box2 a:hover{
+                 text-decoration: none;
+                  color: black;
+             }
+             
+             .text{
+                 line-height: 180%;
+                 padding-left: 23px;
+                 padding-top: 10px;
+                 font-size: 13px;
+                 font-weight: 100;
+                 color: grey;
+             }
+             #one{
+                 width: 411px;
+             }
+             .two
+             {
+                 width: 360px;
+                 margin-left: 50px;
+                 margin-top: 10px;
+             }
+             h3{
+                margin-top: 15px;
+                font-size: 20px;
+                font-weight: 200;
+                margin-bottom: 15px;
+             }
+             .text li{
+                 margin-left: 38px;
+             
+           }
+           .text ul{
+               list-style:disc;
+               margin-top: 10px;
+               margin-bottom: 10px;
+           }
+           .text ol{
+               list-style:decimal;
+               margin-top: 10px;
+           }
+           .sidebar{
+               width:190px;
+               float: left;
+               
+           }
+           #archives{
+               background-image: url(images/img04.gif);
+               background-color: #FFCC00;
+               background-repeat: no-repeat;
+               background-position: left bottom;;
+               width: 240px;
+               height: 170px;
+               float: left;
+               margin-top: 5px;
+               margin-left: 52px;
+           }
+           #archives h1{
+                background-image: url(images/img03.gif);
+               background-color: #FFCC00;
+               background-repeat: no-repeat;
+               background-position: left bottom;
+               color: white;
+               font-size: 25px;
+               text-align:center;
+               height: 25px;
+               padding:10px;
+               font-weight: 100;
+
+           }
+           #archives ul li{
+               font-size: 13px;
+             
+              margin-left: 37px;
+              
+        }
+        #archives ul li a{
+            color: #3399FF;
+        }
+        #archives ul li a:hover{
+            color: coral;
+            text-decoration: none;
+
+
+        }
+
+
+
+           
+           .boxed{
+            width: 260px;
+           height: 167px;
+           float: left;
+           margin-top: 33px;
+           }
+           .clear-all{
+               clear: both;
+           }
+           .boxed ul li{
+               color: white;
+               padding-left: 10px;
+           }
+           .boxed ul li a{
+               color: white;
+               text-decoration: none;
+           }
+           
+           
+           #categories{
+            background-image: url(images/img04.gif);
+               background-color: #FFCC00;
+               background-repeat: no-repeat;
+               background-position: left bottom;;
+               width: 240px;
+               height: 221px;
+               float: left;
+               margin-top: 5px;
+               margin-left: 52px;
+           }
+           #categories h1{
+               background-image: url(images/img03.gif);
+               background-repeat: no-repeat;
+               background-position: top left;
+               width: 247px;
+               height: 40px;
+               float: left;
+               font-size: 24px;
+               text-align: center;
+               padding-top: 8px;
+               color: white;
+               font-weight: 100;
+                
+           }
+           #categories ul li{
+            margin-left: 37px;
+           }
+
+           #categories ul li a{
+               font-size: 12px;
+               color: #3399FF;
+               line-height: 100%;
+           }
+           #tag-cloud{
+            background-image: url(images/img04.gif);
+               background-color: #FFCC00;
+               background-repeat: no-repeat;
+               background-position: left bottom;;
+               width: 240px;
+               height: 275px;
+               float: left;
+               margin-top: 5px;
+               margin-left: 52px;
+           }
+           #tag-cloud h1{
+            background-image: url(images/img03.gif);
+               background-repeat: no-repeat;
+               background-position: top left;
+               width: 247px;
+               height: 40px;
+               float: left;
+               font-size: 24px;
+               text-align: center;
+               padding-top: 8px;
+               color: white;
+               font-weight: 100;
+               
+                
+           }
+           .contents a{
+               color: white;
+               text-decoration: none;
+               font-size: 14px;
+               padding-left: 10px;
+               font-weight: none;
+
+           }
+           .contents a:hover{
+               color: #3399FF;
+               text-decoration: none;
+           }
+          .feed{
+              color:white;
+              font-size: 13px;
+              margin-left: 10px;
+              padding-bottom: 10px;
+              margin-left: 70px
+          }
+          .feed a{
+              color:white;
+              font-size: 13px;
+              margin-left: 10px;
+              text-decoration: underline;
+
+          }
+          .feed a:hover{
+            text-decoration: none;
+          }
+          .popup a{
+              color: white;
+              font-size: 13px;
+              margin-top: 10px;
+              margin-left: 10px;
+              margin-left: 70px
+          }
+          .popup a:hover{
+              text-decoration: none;
+          }
+         #post a{
+             color: black;
+
+         }
+         #post a:hover{
+             text-decoration: none;
+         }
+     
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+           <h1>neoneon</h1>
+           <h2> free css templates</h2>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Photos</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <br class="clear-all"/>
+        </div>
+
+    </div>
+
+
+    <div class="content">
+        <div id="para1"> 
+            <h2>welcome to neoneon!</h2>
+            <div class="box">
+                <p>Posted on February 25, 2007 by John Doe</p>
+                <span> Filed Under</span>
+                <a href="#">Unauthorised</a>
+                <span>|</span>
+                <a href="#">28 Comments</a>
+            </div>
+            <p id="post">
+                <strong>Neoneon</strong> is a free template from Free CSS Templates released under a
+            <a href="#">Creative Commons Attribute 2.5 License</a>
+            .The photos are from PDPhoto.org. You"re free to use it for both commercial or personal use. I only ask that you link back to my site in some way. Enjoy <strong>:)</strong>    
+        </div>
+        <div id="para2">
+            <h2>a few examples of common tags</h2>
+            <div class="box2">
+                <p>Posted on February 25, 2007 by John Doe</p>
+                <span> Filed Under</span>
+                <a href="#">Unauthorised</a>
+                <span>|</span>
+                <a href="#">28 Comments</a>
+            </div>
+            <div class="text">
+              <p id="one">This is an example of a paragraph followed by a blockquote. In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat lorem ipsum dolorem.</p>
+               <blockquote>
+                <p class="two">Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio</p></blockquote>
+               <h3>heading level three</h3>
+                <p >An unordered list example:</p>
+             <ul>
+                <li>List item number one</li>
+                <li>List item number two</li>
+                <li>List item number three</li>
+                <li>List item number four</li>
+             </ul>
+             <p >An ordered list example:</p>
+             <ol>
+                <li>List item number one</li>
+                <li>List item number two</li>
+                <li>List item number three</li>
+                <li>List item number four</li>
+             </ol>
+             <br class="clear-all"/>
+            </div>
+        </div>
+       
+    </div>
+    <div class="sidebar">
+        <div id="archives" class="boxed">
+            <h1>archives </h1>
+            <ul>
+                <li>
+                    <a href="#">February 2007 </a> (25)
+                </li>
+                <li>
+                    <a href="#">January 2007</a> (31)
+                </li>
+                <li><a href="#">December 2006</a> (30)</li>
+                <li><a href="#">November 2006 </a> (31)</li>
+                <li><a href="#">October 2006</a> (31)</li>
+               
+            </ul>
+        </div>
+        <div id="categories" class="boxed">
+            <h1>categories</h1>
+            <ul>
+                <li>
+                    <a href="#">Donec Dictum Metus</a>
+                </li>
+                <li>
+                    <a href="#">Etiam Rhoncus Volutpat</a>
+                </li>
+                <li>
+                    <a href="#">Integer Gravida Nibh</a>
+                </li>
+                <li>
+                    <a href="#">Maecenas Luctus Lectus</a>
+                </li>
+                <li>
+                    <a href="#">Mauris Vulputate Dolor Nibh</a>
+                </li>
+                <li>
+                    <a href="#">Nulla Luctus Eleifend</a>
+                </li>
+                <li>
+                    <a href="#">Posuere Augue Sit Nisl</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div id="tag-cloud" class="boxed">
+            <h1>tag cloud</h1>
+            <div class="contents">
+            <a href="#"> Art  </a><a href="#" style="font-size: 17px;" >Blogging  </a>
+            <a href="#">books  </a><a href="#">culture  </a>
+            <a href="#">Family  </a><a href="#">Food  </a>
+            <a href="#">Friends  </a> <a href="#">Humour  </a>
+            <a href="#" style="font-size: 25px;">Life  </a><a href="#">Love  </a>
+            <a href="#">Movies  </a><a href="#" style="font-size:20px;">Music  </a>
+            <a href="#" style="font-size:19px;">News  </a><a href="#" style="font-size:19px;">Personal  </a>
+            <a href="#">Photography  </a><a href="#" style="font-size: 23px;">Politics  </a>
+            <a href="#">Random  </a><a href="#">Religon  </a><a href="#" style="font-size: 18px;">Thoughts</a>
+            <a href="#">Travel  </a><a href="#">Video  </a>
+            <a href="#">Health  </a><a href="#">Media  </a>
+            <a href="#">Technology  </a><a href="#">Writing  </a>
+        </div>
+
+
+        </div>
+    </div>
+    <br class="clear-all"/>
+    <div class="footer">
+        <p class="feed">
+            ©2007 Neoneon<br>
+            Designed by
+            <a href="#"> Free CSS Templates</a>
+        </p>
+        <p class="popup">
+           <a href="#">RSS Feed</a>
+        </p>
+    </div>
+   
+</div>
+</body>
+</html>
